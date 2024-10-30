@@ -1,0 +1,269 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, bloc.cafuote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd,.caf, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, downtext, jump, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+downtext, jump, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	enum-style: none;
+}
+
+:root {
+  --main-bg-color: black;
+}
+
+
+.jump {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  font-weight: bold;
+  text-align: center;
+  background: #ffffff;
+  transition: .3s;
+}
+.jump.small {
+  height: 70px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.jump.small ~ .offset {
+  padding-top: 40px;
+}
+.jump.small .jump_logo {
+padding-top: 10px;
+  font-size: 20px;
+  text-shadow: none;
+}
+
+.jump_logo {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding-top: 15px;
+  font-size: 50px;
+  text-shadow: 3px 4px rgba(0, 0, 0, 0.1);
+  transition: .3s;
+}
+
+
+bloc.cafuote,.caf {
+.cafuotes: none;
+}
+bloc.cafuote:before, bloc.cafuote:after,
+q:before,.caf:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CLEARFIX */
+
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}
+
+/* STYLE */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans',sans-serif;
+	font-size: 16px;
+	color: #262626;
+	line-height: 1.3;
+	
+}
+
+.containerwrapper {
+	max-width: 768px;
+	margin: 0 auto;
+	text-align: center;
+	border-top: solid 0px #04737a;
+ 
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 1.2em;
+	padding: 0px 0;
+}
+
+.img-responsive {
+	margin: 0 auto;
+    padding-top:0;
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+h2 {
+	padding: 10px;
+	font-size: 1.2em;
+	background: var(--main-bg-color);
+	color: #fff;
+	position: relative;
+	margin-bottom: 35px;
+}
+
+h2:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 25px 25px 0 25px;
+	border-color: var(--main-bg-color) transparent transparent transparent;
+	position: absolute;
+	bottom: -26px;
+	left: 50%;
+	margin-left: -25px;
+}
+
+.caf, .results {
+	background: #efefef;
+	padding: 10px;
+	margin: 0 2px;
+	display: none;
+}
+
+.caf.start {
+	display: block;
+}
+
+.currentNum, .cafuery {
+	font-weight: 700;
+	font-size: 1.25em;
+	margin-bottom: 10px;
+}
+
+button, .finalbuton {
+	text-decoration: none;
+	font-weight: 700;
+	color: #fff;
+	background: var(--main-bg-color);
+	border: 0;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 15px 10px;
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+	font-size: 1.25em;
+	letter-spacing: 0.5px;
+	outline: 0;
+	cursor: pointer;
+}
+
+button:hover, button:active, button:focus, .finalbuton:hover, .finalbuton:active, .finalbuton:focus {
+	background: #262626;
+}
+
+.aboveee {
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+}
+
+.lltt {
+	color: #fff;
+	padding: 0 10px;
+	margin: 70px auto 15px;
+	font-size: 1.2em;
+	text-align: center;
+	max-width: 400px;
+}
+
+.enum {
+	padding: 0 10px;
+	margin-top: 15px;
+}
+
+.enum li {
+	text-align: center;
+	color: #fff;
+	font-size: 1.05em;
+	padding: 2px 0;
+	display: none;
+}
+
+.enum li img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.txt {
+	margin-bottom: 10px;
+}
+
+
+.hide, .likehide, #myCom {
+    display: none;
+}
+.textnumber2 {
+	color: #000;
+	line-height: 2.3;
+	text-align: left;
+}
+
+.timer {
+	font-size: 1.5em;
+	font-weight: 400;
+	color: #009e2a;
+}
+
+
+/**
+ * Footer Styles
+ */
+
+.downtext {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
